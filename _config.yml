@@ -26,7 +26,7 @@ description:      'Easily the most comprehensible primer on causal inference'
 copyrightdate:    2018
 
 url: "https://causal-beast.netlify.app/"
-baseurl: "/causal-beast"
+baseurl: "/"
 
 author:
   name:           'D.H. Kim'
