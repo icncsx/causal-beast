@@ -25,12 +25,12 @@ tagline:          'D.H. Kim'
 description:      'Easily the most comprehensible primer on causal inference'
 copyrightdate:    2018
 
-# url: "https://dhexonian.github.io"
+url: "https://causal-beast.netlify.app/"
 baseurl: "/causal-beast"
 
 author:
   name:           'D.H. Kim'
-  # url:           https://dhexonian.github.io/profile-page/
+  url:           https://causal-beast.netlify.app/profile-page/
 
 mode: production
 
