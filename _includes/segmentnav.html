@@ -1,0 +1,38 @@
+
+{% assign prevsegment = page.segment | minus:1 %}
+
+{% assign nextsegment = page.segment | plus:1 %}
+
+{% assign numsegments = lesson.segments | size %}
+
+
+<div class="wrapper">
+<ul class="button-group round">
+    {% if prevsegment > 0 %}
+    	<a href="../segment{{ prevsegment }}">
+        <button type="button" class="button small secondary">Previous</button></a>
+    {% else %}
+    	<a href="../../lesson{{ lessonindex | plus:1 }}">
+        <button type="button" class="button small secondary">Previous</button></a>
+    {% endif %}
+    &nbsp
+
+    <a href="{{ site.baseurl }}/lessons/lesson{{ page.lesson }}"><button type="button" class="button small secondary">Back to Lesson {{ page.lesson }}
+    </button></a>
+    &nbsp
+
+    {% if nextsegment <= numsegments %}
+    	<a href="../segment{{ nextsegment }}">
+        <button type="button" class="button small secondary">Next</button></a>
+    {% else %}
+    	<a href="../../lesson{{ lessonindex | plus:2}}">
+        <button type="button" class="button small secondary">Next</button></a>
+	{% endif %}
+</ul> 
+</div>
+
+
+
+
+
+

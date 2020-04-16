@@ -1,0 +1,32 @@
+---
+---
+
+[
+  {% for post in site.pages reversed %}
+      {% if post.lesson or post.title %}
+        {% assign lastindex = forloop.rindex %}
+        {% break %}
+      {% endif %}
+  {% endfor %}
+
+  {% for post in site.pages %}
+
+    {% if post.segment %}  
+      {% assign lessonindex = post.lesson | minus:1 %}
+      {% assign segmentindex = post.segment | minus:1 %}
+      {% assign lesson = site.data.outline[lessonindex] %}
+      {% assign title = lesson.segments[segmentindex].title %}
+    {% elsif post.title %}
+      {% assign title = post.title %}
+    {% else %}
+      {% continue %}
+    {% endif %}
+    {
+      "tags"     : "{{ post.tags | join: ', ' }}",
+      "title"    : "{{title}}",
+      "content"   : {{ post.content | strip_html | jsonify }}, 
+      "url"      : "{{ site.baseurl }}{{ post.url }}"
+
+    } {% unless forloop.last or forloop.index == lastindex  %},{% endunless %}
+  {% endfor %}
+]

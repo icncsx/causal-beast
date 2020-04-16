@@ -1,0 +1,28 @@
+# Sidebar Navigation Links
+# First create the .md file(s) at the root of this project with front matter specifying the layout as page and title as the navigation title
+# For example:  
+# ---
+# layout: page
+# title: About
+# --- 
+# Is the front matter for about.md to create a sidebar navigation link of an About page.
+# Once the .md file(s) has(have) been created, specify again the title and also the relative url path in YAML as below 
+# For example:
+# - title: About
+#  url: /about/
+# is the YAML matter to create a navigation link to about page 
+
+- title: Home
+  url: /
+
+- title: About
+  url: /about/
+  
+- title: Resources
+  url: /resources/
+
+- title: Search 
+  url: /search/
+   
+- title: Contact
+  url: /contact/

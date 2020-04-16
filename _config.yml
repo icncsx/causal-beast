@@ -1,0 +1,54 @@
+# all configs 
+
+permalink:   pretty
+markdown:    kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+  - jemoji
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..3
+  enable_coderay: false
+
+redcarpet:
+  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
+
+title:            'Causal Beast'
+tagline:          'D.H. Kim'
+description:      'Easily the most comprehensible primer on causal inference'
+copyrightdate:    2018
+
+url: "https://dhexonian.github.io"
+baseurl: "/causal-beast"
+
+author:
+  name:           'D.H. Kim'
+  url:           https://dhexonian.github.io/profile-page/
+
+mode: production
+
+owner:
+  name: D.H. Kim
+  disqus-shortname: # 822labs-com
+  email: dhexonian@outlook.com
+  personal: 
+  twitter: http://twitter.com/dhexonian
+  youtube: http://www.youtube.com/channel/UCQ0ktEcSSlr-VUhKlE6rBRw
+  github: 
+  stackoverflow:
+  google:
+    plus: 
+    analytics: 
+    verify:
+    ad-client:
+    ad-slot:
+
+
+

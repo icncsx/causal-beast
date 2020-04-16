@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+{% assign lessonindex = page.lesson | minus:1 %}
+{% assign segmentindex = page.segment | minus:1 %}
+{% assign lesson = site.data.outline[lessonindex] %}
+{% assign segment = lesson.segments[segmentindex] %}
+
+<div class="page">	
+  <h2 class="page-title">{{ lesson.title }}</h2>
+  <br/>
+    <h3 class="page-title">{{ page.lesson }}.{{ page.segment}} {{ segment.title }}</h3>
+
+    	{{content}}
+   
+    <div class="video">
+        <iframe width="720" height="315" src="//www.youtube.com/embed/{{ segment.video }}" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <p>
+    Please read the <a href="{{ site.baseurl }}/notes/note{{ page.lesson }}/#segment{{ page.segment }}" target="_blank">lesson notes</a> of {{page.lesson}}.{{page.segment}} that accompany the video.
+    </p>
+
+    {% include segmentnav.html %}
+
+    {% include _social-share.html %}
+
+    {% include _disqus_comments.html %}
+    <div id="disqus_thread"></div>
+</div>
+

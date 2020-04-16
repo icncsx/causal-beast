@@ -1,0 +1,30 @@
+- title: Foundations
+  segments:
+    - title: Introduction to Causal Inference
+      video: 0hOCiYH1YwI
+    - title: Correlation vs. Causation
+      video: jRmWMDnWlEE  
+    - title: Types of Correlation 
+      video: Ak0SLQOAu-o
+    - title: Causality Checklist
+      video: eoGZab4CoWU
+    - title: Ceteris Paribus
+      video: PtshgNKXnSU
+    - title: Measurement
+      video: 5VGGBohb8rQ
+- title: Causal Inference Techniques 
+  segments:
+    - title: Randomized Experiment
+      video: XIVHRn8Zx-E
+    - title: Controlled Regression
+      video: p5eZfUk__ZE  
+    - title: Instrumental Variables 
+      video: j1AE1SZq2k4
+    - title: Regression Discontinuity 
+      video: MIACHui6NHE
+    - title: Difference-in-Differences 
+      video: dSlCBJSh96w
+    - title: Conclusion 
+      video: h7ZEaXKEVRM
+
+

@@ -1,0 +1,25 @@
+<div class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+
+      <img>
+      </img>
+
+      <img src="{{ site.baseurl }}/public/causal-beast.png">
+
+      <p class="lead">{{ site.description }}</p>
+    </div>
+    
+    <hr/>
+
+    <ul class="sidebar-nav">
+        <!-- <a href="{{ site.baseurl }}">{{site.baseurl}}</a> -->
+      {% for node in site.data.navigation %}
+        <li class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}">
+              <a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+            </li>
+      {% endfor %}
+    </ul>
+    
+  </div>
+</div>

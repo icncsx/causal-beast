@@ -1,0 +1,5 @@
+_site
+.DS_Store
+*cache
+.sass-cache
+.jekyll-metadata

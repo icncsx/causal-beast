@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem 'jekyll', '3.8.4'
+gem 'jekyll-sitemap'
+gem 'RedCloth'
+gem 'rouge'
+gem 'json'
+gem 'pygments.rb'
+gem 'jemoji'
+gem 'gemoji'

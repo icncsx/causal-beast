@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+{% assign lessonindex = page.lesson | minus:1 %}
+{% assign lesson = site.data.outline[lessonindex] %}
+
+<style> 
+
+</style>
+<div class="page">
+
+  <h2 class="page-title">{{ lesson.title }}</h2>
+  <br/>
+  
+  {{ content }}
+
+
+  <ul>
+  {% for segment in lesson.segments %}
+    <li><a href="segment{{ forloop.index }}">
+        {{ page.lesson }}.{{ forloop.index }} {{ segment.title }}
+    </a></li>
+  {% endfor %}
+  </ul>
+  
+
+</div>
+
+
