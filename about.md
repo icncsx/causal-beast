@@ -50,8 +50,6 @@ Many thanks to all the people who made creating this course an enjoyable process
 ){:target="_blank"} (illustrator)
 - [David Robinson](http://varianceexplained.org/about/
 ){:target="_blank"} (inspiration)
-- [Emily Glassberg Sands](https://www.linkedin.com/in/egsands/
-){:target="_blank"} (inspiration)
 - [Matthew Masten](https://twitter.com/mattmasten?lang=en){:target="_blank"} (inspiration) 
 
 Licensing
