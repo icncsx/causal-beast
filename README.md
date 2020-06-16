@@ -32,12 +32,6 @@ Serve the app locally:
 bundle exec jekyll server
 ```
 
-Start the app:
-
-```
-npm start
-```
-
 ## Public URL
 
 The project is also deployed on Netlify. Check out this [link](https://causal-beast.netlify.app/about/). 
